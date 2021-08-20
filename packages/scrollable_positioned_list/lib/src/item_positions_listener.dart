@@ -16,6 +16,7 @@ abstract class ItemPositionsListener {
 
   /// The position of items that are at least partially visible in the viewport.
   ValueListenable<Iterable<ItemPosition>> get itemPositions;
+  ValueListenable<Iterable<ItemPosition>> get cachedItemPositions;
 }
 
 /// Position information for an item in the list.

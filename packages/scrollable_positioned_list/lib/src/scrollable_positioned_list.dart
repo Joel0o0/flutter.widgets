@@ -556,6 +556,9 @@ class _ScrollablePositionedListState extends State<ScrollablePositionedList>
                   ? value
                   : element));
     }
+    // 将缓存中的itemPositions传给外部
+    widget.itemPositionsNotifier?.cachedItemPositions.value =
+        primary.itemPositionsNotifier.itemPositions.value;
     widget.itemPositionsNotifier?.itemPositions.value = itemPositions;
   }
 }

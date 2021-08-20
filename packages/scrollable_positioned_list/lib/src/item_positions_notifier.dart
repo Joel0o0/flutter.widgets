@@ -10,4 +10,6 @@ import 'item_positions_listener.dart';
 class ItemPositionsNotifier implements ItemPositionsListener {
   @override
   final ValueNotifier<Iterable<ItemPosition>> itemPositions = ValueNotifier([]);
+  @override
+  final ValueNotifier<Iterable<ItemPosition>> cachedItemPositions = ValueNotifier([]);
 }
